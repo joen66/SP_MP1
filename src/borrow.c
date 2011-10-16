@@ -6,10 +6,10 @@
 #include "sharedfunc.h"
 int main(int argc, char* argv[]){
 	int book_idx=0,fdBooks,fdLockBooks,given_user_id;
-    if( argc != 3 ){
-        perror("invalid the number of arguments\n");
+	if( argc != 3 ){
+		perror("invalid the number of arguments\n");
 		return -1;
-    }
+	}
 	book_idx = atoi(argv[1]);
 	given_user_id = atoi(argv[2]);
 
@@ -31,5 +31,5 @@ int main(int argc, char* argv[]){
 
 	sleep(10);
 	setLock(fdBooks, book_idx,"U");
-    return 0;
+	return 0;
 }
