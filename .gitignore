@@ -1,5 +1,5 @@
 src/stage/*
 src/*.o
 src/*.c
-src/ctags
+src/tags
 src/*.swp
